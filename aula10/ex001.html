@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background: palevioletred;
+            color: white;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            line-height: 300px;
+            text-align: center;
+        }
+        div#exemplo{
+            font: normal 20pt Arial;
+            background: rgb(236, 30, 99);
+            color: white;
+            width: 300px;
+            height: 300px;
+            margin: auto;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmousedown="baixo()">
+        interaja...
+    </div> -->
+    <div id = 'exemplo'>
+        interaja
+    </div>
+    <script>
+        var exemplo =  window.document.getElementById('exemplo')
+        exemplo.addEventListener('click', clicar)
+        exemplo.addEventListener('mouseenter', entrar)
+        exemplo.addEventListener('mouseout', sair)
+        function clicar(){
+            exemplo.innerText = 'MUDEI!';
+        }
+        /*function clicar(){
+            var area = window.document.getElementById('area')
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            var area = document.getElementById('area')
+            area.style.background = 'purple';
+            area.style.color = '';
+            area.innerText = 'Entrou!'
+        }
+        function sair(){
+            var area = document.getElementById('area')
+            area.style.background = 'palevioletred';
+            area.style.color = 'white';
+            area.innerText = 'Saiu!'
+        }*/
+    </script>
+</body>
+</html>

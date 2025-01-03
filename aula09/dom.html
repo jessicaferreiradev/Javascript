@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando seletores dom</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-size: medium;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: darkred;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>TÍTULO UM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia omnis consequatur voluptatibus modi quidem quod odit, incidunt quasi, ullam blanditiis, quos ipsam sint quia similique architecto quam eum. Facilis, praesentium.</p>
+    <h2>SUBTÍTULO</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis itaque nesciunt dolores ab animi magni, voluptatum aliquid libero, nam culpa blanditiis inventore! Nihil eligendi quisquam dignissimos, ullam officia eveniet nam.</p>
+    <div id="especial">clique aqui</div>
+    <h2>SUBTÍTULO 2</h2>
+    <p class="exemplo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, suscipit! Numquam, accusantium illum? Animi magnam reprehenderit quisquam ex iste eius nobis minus, et dignissimos, beatae perferendis debitis numquam cupiditate ut.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim culpa alias veritatis, fugit ab, repellendus quia quas aut facilis eligendi nemo inventore modi quod esse magnam error. Voluptatem, hic.</p>
+    <script>
+        var h = window.document.getElementsByTagName('h2')[1];
+        h.style.backgroundColor = 'white';
+        var especial = window.document.querySelector('div#especial');
+        especial.style.backgroundColor = 'green';
+        window.document.write(especial.innerHTML)
+        var p = window.document.getElementsByTagName('p')[1];
+        p.style.textDecoration = 'underline';
+        p.style.fontFamily = 'Arial';
+        p.style.fontSize = "25px";
+        var sub = window.document.getElementsByTagName('h2')[0]
+        sub.style.fontFamily = 'Arial';
+        sub.style.fontStyle = 'italic';
+    </script>
+</body>
+</html>
