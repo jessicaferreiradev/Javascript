@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Média aritmética</h1>
+    <p>Digite três números e saiba a média aritmética deles.</p>
+    <script>
+        var num1 = Number.parseFloat(window.prompt('Digite um número qualquer: '))
+        var num2 = Number.parseFloat(window.prompt('Digite outro número qualquer: '))
+        var num3 = Number.parseFloat(window.prompt('Digite mais um número: '))
+        media = (num1 + num2 + num3) / 3
+        window.alert(`A média aritmética de ${num1}, ${num2} e ${num3} é igual a ${media}.`)
+    </script>
+</body>
+</html>
