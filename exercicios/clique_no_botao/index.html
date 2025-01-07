@@ -1,0 +1,40 @@
+<!--Exercício 1: Clique no botão
+Objetivo: Quando o usuário clicar em um botão, verifique se ele é maior de idade (18 anos ou mais) e exiba uma mensagem.
+
+Requisitos:
+Crie um campo de entrada (input) onde o usuário possa digitar sua idade.
+Adicione um botão para verificar a idade.
+Use um evento de clique para exibir:
+"Você é maior de idade" se a idade for 18 ou mais.
+"Você é menor de idade" caso contrário.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifique sua idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verique a sua idade</h1>
+    <input type="number" name="txtidade" id="txtidade">
+    <input type="button" value="Verifique" onclick="clicar()" id="botao">
+    <div id="msg">
+
+    </div>
+    <script>
+        function clicar(){
+            var idade = window.document.getElementById('txtidade')
+            var ms = window.document.getElementById('msg')
+            var idd = Number(idade.value)
+            ms.innerHTML = `Você tem ${idd} anos.`
+            if (idd > 17) {
+                ms.innerHTML += '<p>Você é <strong>maior de idade</strong>.</p>'
+            } else {
+                ms.innerHTML += '<p>Você é <strong>menor de idade</strong>.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
