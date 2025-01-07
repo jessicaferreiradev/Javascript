@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Compostas</title>
+</head>
+<body>
+    <h1>Qual o seu time? </h1>
+    <input type="text" name="txttime" id="txttime">
+    <input type="button" value="Verifique" onclick="enter()">
+    <div id="res">
+
+    </div>
+    <script>
+        function enter(){
+            var time =  window.document.getElementById('txttime').value
+            var r =  window.document.getElementById('res')
+            r.innerHTML = `Você torce para o ${time}.`
+            if (time == 'Corinthians') {
+                r.innerHTML += '<p>Vai Corinthians</p>'
+            } else {
+                if (time == 'Palmeiras'){
+                    r.innerHTML += '<p>Avante Palestra</p>'
+                } else {
+                    r.innerHTML += '<p>Que bacana</p>'
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o seu país?</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            font: normal large Arial;
+        }
+        h1{
+            text-align: center;
+        }
+        div#res{
+            margin-top: 15px;
+        }
+        input#txtpais{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual é o seu país?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enter" onclick="enter()">
+    <div id="res">
+
+    </div>
+    <script>
+        function enter(){
+            var pais = window.document.getElementById('txtpais').value
+            var r = window.document.querySelector('div#res')
+            r.innerHTML = `${pais}`;
+            r.innerHTML = `Você nasceu em ${pais}.`
+           if (pais == 'Brasil') {
+                r.innerHTML += '<p>Você é Brasileiro</p>'
+            } else {
+               r.innerHTML += '<p>Você é estrangeiro.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
