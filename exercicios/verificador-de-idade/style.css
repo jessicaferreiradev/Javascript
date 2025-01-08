@@ -1,0 +1,18 @@
+@charset "UFT-8";
+
+body{
+    font: normal large Arial;
+    background-color: rgba(245, 126, 165, 0.856);
+}
+h1{
+    text-align: center;
+    color:aliceblue
+}
+img{
+    width: 250x;
+    height: 250px;
+}
+
+#txtano{
+    width: 150px;
+}
