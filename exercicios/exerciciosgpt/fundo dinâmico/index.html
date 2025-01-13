@@ -6,14 +6,24 @@
     <title>Fundo Dinâmico</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="fundo">
-    <h1>Escolha uma cor</h1>
-    <button id="vermelho" onclick="clicar()">Vermelho</button>
-    <script>
-        function clicar(){
-            var f = window.document.getElementById('fundo')
-            f.animate('')
-        }
-    </script>
+<body id="back">
+    <h1>FUNDO DINÂMICO</h1>
+    <h2>Escolha seu papel de parede.</h2>
+    <input type="radio" name="fundo" id="jinx">
+    <label for="jinx">Jinx</label>
+    <input type="radio" name="fundo" id="cait">
+    <label for="cait">Caitlyn</label>
+    <input type="radio" name="fundo" id="nezuko">
+    <label for="nezuko">Nezuko</label>
+    <input type="radio" name="fundo" id="roxo">
+    <label for="roxo">Roxo</label>
+    <input type="radio" name="fundo" id="azul">
+    <label for="azul">Azul</label>
+    <input type="radio" name="fundo" id="Amarelo">
+    <label for="Amarelo">Amarelo</label>
+    <input type="radio" name="fundo" id="rosa">
+    <label for="rosa">Rosa</label>
+    <button onclick="enter()">Enter</button>
+    <script src="script.js"></script>
 </body>
 </html>
