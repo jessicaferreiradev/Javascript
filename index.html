@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Eventos DOM</title>
+</head>
+<body>
+    <h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+    <button onclick="displayDate()">Try it</button>
+    <p>Click "Try It" to execute the displayDate() function</p>
+    <button id="myBtn">Try It</button>
+    <p id="deno"></p>
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+        document.getElementById("myBtn").onclick = displayDate;
+        function displayDate(){
+            document.getElementById("deno").innerHTML = Date();
+        }
+    </script>
+    <p id="demo"> </p>
+</body>
+</html>

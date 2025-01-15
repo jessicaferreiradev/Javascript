@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor de fundo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16pt;
+        }
+        div{
+            margin: auto;
+            width: 500px;
+            height: 400px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="corpo">
+    <div>
+        <h1>Mudando a cor de fundo</h1>
+        <p>Escolha abaixo a cor da página</p>
+        <button id="ver">Vermelho</button>
+        <button id="ros">Rosa</button>
+        <button id="pre">Preto</button>
+    </div>
+    <script>
+        document.getElementById('ver').addEventListener('click', function() { 
+            document.getElementById('corpo').style.background = 'red', 
+            document.getElementById('corpo').style.color = 'white'} )
+
+        document.getElementById('ros').addEventListener('click', function () { 
+            document.getElementById("corpo").style.background = 'pink', 
+            document.getElementById('corpo').style.color =  'white'})
+
+        document.getElementById('pre').addEventListener('click', function(){
+            document.getElementById('corpo').style.background = 'black',
+            document.getElementById('corpo').style.color = 'whitesmoke' 
+        })
+    </script>
+</body>
+</html>
