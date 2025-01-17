@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(90, 40, 90);
+    color: white;
+    padding: 20px;
+}
+
+header >  h1{
+    font-size: 20pt;
+}
+
+main{
+    width: 600px;
+    padding-top: 10px;
+    margin: auto;
+    text-align: justify;
+}
+
+main > h2{
+    padding: 5px;
+}
+
+main > p {
+    font-size: 16pt;
+}
+
+.explicando{
+    padding: 15px;
+    font-size: small;
+}
+button{
+    height: 30px;
+    width: 100px;
+    margin: 6px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button#aumentar{
+    background-color: palevioletred;
+    font-weight: bold;
+}
+button#diminuir{
+    background-color: cadetblue;
+    font-weight: bold;
+}
+button#aumentar:hover{
+    background-color: antiquewhite;
+    color: rgb(146, 1, 49);
+}
+button#diminuir:hover{
+    background-color: azure;
+    color: rgb(44, 77, 78);
+}
+button#original {
+    font-size: 8pt;  
+    background-color: rgb(65, 184, 65);
+    font-weight: bold;
+}
