@@ -1,0 +1,9 @@
+function mudar(){
+    document.body.style.background = '#090C9B';
+    document.getElementById('div').style.background = '#B4C5E4';
+    document.getElementById('titulo').innerHTML = 'Ainda Estou Aqui'
+    document.getElementById('texto').innerHTML = '"Ainda Estou Aqui" é um filme brasileiro de 2024, dirigido por Walter Salles, que retrata a história de Eunice Paiva, interpretada por Fernanda Torres. Ambientado durante a ditadura militar no Brasil, o filme narra a luta de Eunice após o desaparecimento de seu marido, o deputado Rubens Paiva, preso e morto pelo regime em 1971. A trama destaca a resiliência de Eunice ao se reinventar e buscar justiça enquanto cria seus cinco filhos. A produção é baseada na autobiografia de Marcelo Rubens Paiva, filho do casal.'
+    document.getElementById('texto2').innerHTML = 'O filme "Ainda Estou Aqui", dirigido por Walter Salles, é um poderoso drama histórico que mergulha no período da ditadura militar brasileira por meio da trajetória de Eunice Paiva, interpretada com maestria por Fernanda Torres. Inspirado na autobiografia de Marcelo Rubens Paiva, a obra narra o impacto devastador da prisão e morte de seu pai, o deputado Rubens Paiva, nos anos 1970, e a luta incansável de sua mãe para criar os filhos e buscar justiça."Ainda Estou Aqui" não é apenas um filme sobre a ditadura; é um tributo à resiliência e à luta por justiça. Com uma abordagem delicada e atuações memoráveis, o longa reafirma a importância de revisitar o passado para compreender o presente. Mais do que um drama histórico, é uma obra necessária para manter viva a memória daqueles que sofreram com a repressão.'
+
+    foto.src = 'https://upload.wikimedia.org/wikipedia/pt/5/57/Ainda_Estou_Aqui_2024_poster.jpg'
+}

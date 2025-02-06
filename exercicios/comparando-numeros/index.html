@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparando Números</title>
+    <style>
+        body{
+            background-color: darksalmon;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            padding: 20px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escreva dois números</h1>
+    <input type="number" name="num1" id="num1">
+    <input type="number" name="num2" id="num2">
+    <button onclick="verificar()">Verificar</button>
+    <div id="resposta"> </div>
+    <script>
+        function verificar(){
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var res = document.getElementById('resposta');
+            if (num1 > num2){
+                res.innerHTML = `O número ${num1} é maior que o número ${num2}.`
+            } else if (num2 > num1) {
+                res.innerHTML = `O número ${num2} é maior que o número ${num1}.`
+            } else {
+                res.innerHTML = `Os números são iguais.`
+            }
+        }
+    </script>
+
+</body>
+</html>

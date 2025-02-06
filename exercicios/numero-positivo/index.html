@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivo ou Negativo</title>
+    <style>
+        body{
+            background-color: burlywood;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        div{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verifique se o número é Positivo ou Negativo</h1>
+    <input type="number" name="numero" id="numero">
+    <button onclick="clicar()">verifique</button>
+
+    <div id="resposta">
+        
+    </div>
+    <script>
+        function clicar(){
+            var numero = Number(document.getElementById('numero').value);
+            var resultado = document.getElementById('resposta');
+            if (numero > 0){
+                resultado.textContent = `O número ${numero} é positivo.`
+            } else {
+                resultado.textContent = `O número ${numero} é negativo.`
+            }
+        }
+    </script>
+</body>
+</html>
